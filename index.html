@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script src="./dist/cool-project/elements.js"></script>
+
+<app-cool text="Ich bin NICHT der Standard Text"></app-cool>
+<script>
+  const ourElement = document.querySelector('app-cool');
+  ourElement.addEventListener('output', function (event){
+    console.log(event.detail)
+  })
+</script>
+</body>
+</html>
